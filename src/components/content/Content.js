@@ -17,7 +17,7 @@ const Content = (props) => {
     let stateActive
     let stateCompleted
 
-    if (state.length > 0 && props.search.length > 0) {
+    if (state.length > 0) {
         stateActive = state[0].todoActive.filter(u => {
             for (let i = 0; i < props.search.length; i++) {
                 if (u.name[i].toUpperCase() !== props.search[i].toUpperCase()) {
