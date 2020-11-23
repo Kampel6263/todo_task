@@ -19,6 +19,10 @@ const Content = (props) => {
 
     if (state.length > 0) {
         stateActive = state[0].todoActive.filter(u => {
+            if (u.name.length < props.search.length) {
+                return false
+            }
+
             for (let i = 0; i < props.search.length; i++) {
                 if (u.name[i].toUpperCase() !== props.search[i].toUpperCase()) {
                     return false
@@ -28,6 +32,11 @@ const Content = (props) => {
         })
 
         stateCompleted = state[0].todoCompleted.filter(u => {
+
+            if (u.name.length < props.search.length) {
+                return false
+            }
+
             for (let i = 0; i < props.search.length; i++) {
                 if (u.name[i].toUpperCase() !== props.search[i].toUpperCase()) {
                     return false
