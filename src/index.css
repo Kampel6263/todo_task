@@ -1,0 +1,57 @@
+*{
+  margin: 0;
+  padding: 0;
+  outline: none;
+  list-style-type: none;
+  font-family: 'Roboto', sans-serif;
+  border: none;
+  background: none;
+  /*transition: .4s linear;*/
+}
+
+body{
+  background: #242426;
+}
+
+.background1{
+  background: url("./assets/img/1.jpg") center no-repeat;
+  background-size: cover;
+
+}
+
+.background2{
+  background: url("./assets/img/2.jpg") center no-repeat;
+  background-size: cover;
+}
+
+.background3{
+  background: url("./assets/img/3.jpg") center no-repeat;
+  background-size: cover;
+}
+
+.background4{
+  background: url("./assets/img/4.jpg") center no-repeat;
+  background-size: cover;
+}
+
+.background5{
+  background: url("./assets/img/5.jpg") center no-repeat;
+  background-size: cover;
+}
+
+.background6{
+  background: url("./assets/img/6.jpg") center no-repeat;
+  background-size: cover;
+}
+.background7{
+  background: url("./assets/img/7.jpg") center no-repeat;
+  background-size: cover;
+}
+.background8{
+  background: url("./assets/img/8.jpg") center no-repeat;
+  background-size: cover;
+}
+.background9{
+  background: url("./assets/img/9.jpg") center no-repeat;
+  background-size: cover;
+}

@@ -1,0 +1,250 @@
+
+.content {
+    width: 100%;
+    height: 100%;
+    transition: .1s linear;
+    position: relative;
+}
+
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    margin: 0 auto;
+    padding: 35px 10%;
+    font-size: 40px;
+    color: #eee;
+    position: relative;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, .85), rgba(0, 0, 0, 0));
+}
+
+
+.task {
+    position: absolute;
+    width: 80%;
+    height: 75%;
+    top: 50%;
+    left: 50%;
+    overflow-y: scroll;
+    transform: translate(-50%, -47%);
+}
+
+.list {
+    display: flex;
+    align-items: center;
+    padding: 18px;
+    border-radius: 5px;
+    background: #2d2d2ff6;
+    margin-bottom: 3px;
+    transition: .1s linear;
+    position: relative;
+}
+
+.list:hover {
+    background: #343434f6;
+}
+
+.icon {
+    display: inline-block;
+    width: 23px;
+    height: 23px;
+    margin-right: 5px;
+}
+
+.uncompleted {
+    background: url("../../assets/img/o.png") center;
+    background-size: cover;
+    transition: .1s linear;
+    cursor: pointer;
+}
+
+.uncompleted:hover {
+    background: url("../../assets/img/d.png") center;
+    background-size: cover;
+}
+
+.completed {
+    background: url("../../assets/img/d.png") center;
+    background-size: cover;
+}
+
+.active_name {
+    color: #ddd;
+}
+
+.complete_name {
+    color: #666;
+    text-decoration: line-through;
+}
+
+
+
+.header_completed {
+    width: 110px;
+    padding: 5px 0;
+    color: #d9d9d9;
+    font-size: 16px;
+    text-align: center;
+    margin: 10px 0;
+    background: rgba(16, 15, 15, 0.8);
+    border-radius: 5px;
+}
+
+.task.footer {
+    top: auto;
+    bottom: 10px;
+    height: auto;
+    transform: translate(-50%, 0);
+}
+
+.list.footer_list {
+    background: #2d2d2fb2;
+}
+
+.list.footer_list:hover {
+    background: #4d4d4fb2;
+}
+
+.add_icon {
+    width: 20px;
+    margin-right: 15px;
+}
+
+/*edit*/
+
+.control {
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -50%) rotate(90deg);
+    cursor: pointer;
+    padding: 2px 4px;
+    color: #d2d2d2;
+    opacity: 0;
+    transition: .1s linear;
+}
+
+
+.control.edit {
+    right: 35px;
+    font-size: 17px;
+}
+
+.control.delete {
+    right: 10px;
+    font-size: 30px;
+}
+
+.list:hover .control {
+    opacity: 0.5;
+}
+
+.control.edit:hover {
+    color: #fff;
+}
+
+.control.delete:hover {
+    color: red;
+}
+
+/*style control*/
+
+.menu {
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -50%);
+    right: 10.4%;
+    font-size: 20px;
+    cursor: pointer;
+    padding: 5px;
+    z-index: 1000;
+}
+
+.style__control {
+    width: 160px;
+    padding: 5px 40px 20px;
+    background: #242426;
+    position: absolute;
+    top: 44px;
+    right: 10%;
+    border-radius: 10px;
+
+}
+
+.style__control div {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 5px;
+}
+
+.style__control h2 {
+    font-size: 15px;
+    color: #eeeeee;
+    margin-top: 15px;
+}
+
+
+.background__change {
+    display: block;
+    width: 45px;
+    height: 45px;
+    border: 2px solid rgba(0, 0, 0, 0);
+    cursor: pointer;
+}
+
+.sidebar__control {
+    padding: 6px 14px;
+    border-radius: 0 0 10px 10px;
+    background: #242426;
+    position: absolute;
+    top: 10px;
+    left: -18px;
+    z-index: 10000;
+    transform: scale(0.7) rotate(-90deg);
+    opacity: 0.5;
+    transition: opacity .1s linear;
+    cursor: pointer;
+}
+
+.sidebar__control:hover{
+    opacity: 1;
+}
+
+/*search*/
+
+.search{
+    position: absolute;
+    width: 120px;
+    top: 50%;
+    right: 14%;
+    transform: translate(0, -50%);
+    background: #eeeeee;
+    border-radius: 15px;
+    height: 0;
+    padding: 15px 30px 15px 15px;
+    color: #242426;
+    font-size: 16px;
+}
+
+.close__search{
+    position: absolute;
+
+    top: 50%;
+    right: 14.5%;
+    transform: translate(0, -50%);
+    font-size: 20px;
+    color: #242426;
+    cursor: pointer;
+    padding: 5px;
+    opacity: 0.5;
+    transition: opacity .1s linear;
+}
+
+.close__search:hover{
+    opacity: 0.9;
+}
+
+input{
+    font-size: 16px;
+}
